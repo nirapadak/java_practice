@@ -144,6 +144,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class Main {
@@ -248,6 +249,8 @@ public class Main {
 //        employeeOne.sayHello();
 //        employeeOne.propertyOne();
 
+
+        // invalid concept
 //        ArrayList arrayList;
 //
 //        arrayList = new ArrayList<>();
@@ -260,6 +263,26 @@ public class Main {
 //        arrayList.add(6);
 //
 //        arrayList.forEach((e)-> System.out.println(e));
+
+
+        // Arraylist<int> don't write this way ----- this is invalid way
+        // you must write ArrayList<Integer> array = new ArrayList<>(); ----------------------------
+        ArrayList<Integer> arrayList1 = new ArrayList<>();
+
+        arrayList1.add(1);
+        arrayList1.add(2);
+        arrayList1.add(3);
+        arrayList1.add(4);
+        arrayList1.add(5);
+        arrayList1.add(6);
+
+        arrayList1.forEach((i)-> System.out.println(i));
+
+        Scanner myScan = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String userName = myScan.nextLine();
+
+        System.out.println("my name is : "+userName);
 
 
 
