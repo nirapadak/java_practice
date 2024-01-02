@@ -33,4 +33,8 @@ public abstract class employee {
         return dataOfBirth;
     }
 
+    public void saySomething(){
+        System.out.println("You are a Employee");
+    }
+
 }

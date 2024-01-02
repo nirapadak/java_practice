@@ -22,5 +22,9 @@ public class fullTimeEmployee extends employee {
         return (int) (getSalary()-calculate());
     }
 
-
+    @Override
+    public void saySomething() {
+        super.saySomething();
+        System.out.println("You are a Full Time Employee");
+    }
 }

@@ -138,12 +138,12 @@ import TaxtCalculator.employee;
 import TaxtCalculator.fullTimeEmployee;
 import TaxtCalculator.partTimeEmployee;
 
-import java.lang.reflect.Array;
+
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 
 public class Main {
@@ -153,6 +153,7 @@ public class Main {
         employee fullTimeEmployee = new fullTimeEmployee("Nirpaddak","Developer", 32948, 2002);
 
 
+        fullTimeEmployee.saySomething();
         String name =fullTimeEmployee.getName();
         String pos = fullTimeEmployee.getPosition();
         float salary = fullTimeEmployee.getSalary();
@@ -164,6 +165,7 @@ public class Main {
 
         employee PartTimeEmployee = new partTimeEmployee("bejoy pal", "App developer", 10000, 2007);
 
+        PartTimeEmployee.saySomething();
         System.out.println(PartTimeEmployee.getName());
         System.out.println(PartTimeEmployee.getPosition());
         System.out.println(PartTimeEmployee.getSalary());
@@ -246,18 +248,18 @@ public class Main {
 //        employeeOne.sayHello();
 //        employeeOne.propertyOne();
 
-        ArrayList arrayList;
-
-        arrayList = new ArrayList<>();
-
-        arrayList.add(1);
-        arrayList.add(2);
-        arrayList.add(3);
-        arrayList.add(4);
-        arrayList.add(5);
-        arrayList.add(6);
-
-        arrayList.forEach((e)-> System.out.println(e));
+//        ArrayList arrayList;
+//
+//        arrayList = new ArrayList<>();
+//
+//        arrayList.add(1);
+//        arrayList.add(2);
+//        arrayList.add(3);
+//        arrayList.add(4);
+//        arrayList.add(5);
+//        arrayList.add(6);
+//
+//        arrayList.forEach((e)-> System.out.println(e));
 
 
 
