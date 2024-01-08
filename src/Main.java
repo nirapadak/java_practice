@@ -134,6 +134,8 @@
 // how to user defined package import
 
 
+import CalculatQuantity.Volume;
+import CalculatQuantity.reg;
 import TaxtCalculator.employee;
 import TaxtCalculator.fullTimeEmployee;
 import TaxtCalculator.partTimeEmployee;
@@ -151,83 +153,83 @@ public class Main {
     public static void main(String[] args){
 
 
-        employee fullTimeEmployee = new fullTimeEmployee("Nirpaddak","Developer", 32948, 2002);
-
-
-        fullTimeEmployee.saySomething();
-        String name =fullTimeEmployee.getName();
-        String pos = fullTimeEmployee.getPosition();
-        float salary = fullTimeEmployee.getSalary();
-        float taxt = fullTimeEmployee.calculate();
-
-
-        System.out.println(name+"\n"+pos+" \n"+salary+"\n myText is : "+taxt+"\n I'm "+ fullTimeEmployee.getDataOfBirth()+" year old"+"myActual Salary : "+ fullTimeEmployee.actualSalary());
-
-
-        employee PartTimeEmployee = new partTimeEmployee("bejoy pal", "App developer", 10000, 2007);
-
-        PartTimeEmployee.saySomething();
-        System.out.println(PartTimeEmployee.getName());
-        System.out.println(PartTimeEmployee.getPosition());
-        System.out.println(PartTimeEmployee.getSalary());
-        System.out.println("myTEXt is: "+PartTimeEmployee.calculate());
-        System.out.println("I'm "+ PartTimeEmployee.calculateAge());
-
-        // data and time object in java ----------------------------
-        LocalDate dataObj = LocalDate.now();
-        LocalTime timeObj = LocalTime.now();
-
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-        DateTimeFormatter dayFormatter = DateTimeFormatter.ofPattern("dd:MM:yyyy");
-
-
-        DateTimeFormatter date = DateTimeFormatter.ofPattern("dd");
-        DateTimeFormatter Moth = DateTimeFormatter.ofPattern("MM");
-        DateTimeFormatter year = DateTimeFormatter.ofPattern("yyyy");
-
-
-        System.out.println("\ntoday "+date.format(dataObj));
-        System.out.println("\nmoth "+Moth.format(dataObj));
-        System.out.println("\nYear "+year.format(dataObj));
-
-        System.out.println(formatter.format(timeObj));
-        System.out.println(dayFormatter.format(dataObj));
-
-        System.out.println("\n"+timeObj);
-        System.out.println("\n\n"+dataObj);
-
-
-
-        employee anotherEmployee = new employee("sumon", "Web Developer", 30000, 2000) {
-
-            LocalDate obj = LocalDate.now();
-            DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy");
-            int myYear = Integer.parseInt(dateTimeFormatter.format(obj));
-
-            @Override
-            public float calculate() {
-                return getSalary()*4/100;
-            }
-
-            @Override
-            public int calculateAge() {
-                return myYear-getDataOfBirth();
-            }
-
-            @Override
-            public int actualSalary() {
-                return (int) (getSalary()-calculate());
-            }
-        };
-
-        System.out.println("\n\n\n");
-        System.out.println("my name is : "+anotherEmployee.getName());
-        System.out.println("my position :"+anotherEmployee.getPosition());
-        System.out.println("my Taxt : "+anotherEmployee.calculate());
-        System.out.println("I'm : "+anotherEmployee.calculateAge());
-        System.out.println("my salary: "+anotherEmployee.getSalary());
-        System.out.println("my actual salary: "+anotherEmployee.actualSalary());
+//        employee fullTimeEmployee = new fullTimeEmployee("Nirpaddak","Developer", 32948, 2002);
+//
+//
+//        fullTimeEmployee.saySomething();
+//        String name =fullTimeEmployee.getName();
+//        String pos = fullTimeEmployee.getPosition();
+//        float salary = fullTimeEmployee.getSalary();
+//        float taxt = fullTimeEmployee.calculate();
+//
+//
+//        System.out.println(name+"\n"+pos+" \n"+salary+"\n myText is : "+taxt+"\n I'm "+ fullTimeEmployee.getDataOfBirth()+" year old"+"myActual Salary : "+ fullTimeEmployee.actualSalary());
+//
+//
+//        employee PartTimeEmployee = new partTimeEmployee("bejoy pal", "App developer", 10000, 2007);
+//
+//        PartTimeEmployee.saySomething();
+//        System.out.println(PartTimeEmployee.getName());
+//        System.out.println(PartTimeEmployee.getPosition());
+//        System.out.println(PartTimeEmployee.getSalary());
+//        System.out.println("myTEXt is: "+PartTimeEmployee.calculate());
+//        System.out.println("I'm "+ PartTimeEmployee.calculateAge());
+//
+//        // data and time object in java ----------------------------
+//        LocalDate dataObj = LocalDate.now();
+//        LocalTime timeObj = LocalTime.now();
+//
+//
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+//        DateTimeFormatter dayFormatter = DateTimeFormatter.ofPattern("dd:MM:yyyy");
+//
+//
+//        DateTimeFormatter date = DateTimeFormatter.ofPattern("dd");
+//        DateTimeFormatter Moth = DateTimeFormatter.ofPattern("MM");
+//        DateTimeFormatter year = DateTimeFormatter.ofPattern("yyyy");
+//
+//
+//        System.out.println("\ntoday "+date.format(dataObj));
+//        System.out.println("\nmoth "+Moth.format(dataObj));
+//        System.out.println("\nYear "+year.format(dataObj));
+//
+//        System.out.println(formatter.format(timeObj));
+//        System.out.println(dayFormatter.format(dataObj));
+//
+//        System.out.println("\n"+timeObj);
+//        System.out.println("\n\n"+dataObj);
+//
+//
+//
+//        employee anotherEmployee = new employee("sumon", "Web Developer", 30000, 2000) {
+//
+//            LocalDate obj = LocalDate.now();
+//            DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy");
+//            int myYear = Integer.parseInt(dateTimeFormatter.format(obj));
+//
+//            @Override
+//            public float calculate() {
+//                return getSalary()*4/100;
+//            }
+//
+//            @Override
+//            public int calculateAge() {
+//                return myYear-getDataOfBirth();
+//            }
+//
+//            @Override
+//            public int actualSalary() {
+//                return (int) (getSalary()-calculate());
+//            }
+//        };
+//
+//        System.out.println("\n\n\n");
+//        System.out.println("my name is : "+anotherEmployee.getName());
+//        System.out.println("my position :"+anotherEmployee.getPosition());
+//        System.out.println("my Taxt : "+anotherEmployee.calculate());
+//        System.out.println("I'm : "+anotherEmployee.calculateAge());
+//        System.out.println("my salary: "+anotherEmployee.getSalary());
+//        System.out.println("my actual salary: "+anotherEmployee.actualSalary());
 
 //        oop employeeOne = new oop("nirapadak", "developer", 234);
 //
@@ -267,22 +269,46 @@ public class Main {
 
         // Arraylist<int> don't write this way ----- this is invalid way
         // you must write ArrayList<Integer> array = new ArrayList<>(); ----------------------------
-        ArrayList<Integer> arrayList1 = new ArrayList<>();
+//        ArrayList<Integer> arrayList1 = new ArrayList<>();
+//
+//        arrayList1.add(1);
+//        arrayList1.add(2);
+//        arrayList1.add(3);
+//        arrayList1.add(4);
+//        arrayList1.add(5);
+//        arrayList1.add(6);
+//
+//        arrayList1.forEach((i)-> System.out.println(i));
+//
+//        Scanner myScan = new Scanner(System.in);
+//        System.out.println("Enter your name: ");
+//        String userName = myScan.nextLine();
 
-        arrayList1.add(1);
-        arrayList1.add(2);
-        arrayList1.add(3);
-        arrayList1.add(4);
-        arrayList1.add(5);
-        arrayList1.add(6);
+//        System.out.println("my name is : "+userName);
 
-        arrayList1.forEach((i)-> System.out.println(i));
 
-        Scanner myScan = new Scanner(System.in);
-        System.out.println("Enter your name: ");
-        String userName = myScan.nextLine();
+        // volume -------------------------------------------------------------------
 
-        System.out.println("my name is : "+userName);
+        Scanner number = new Scanner(System.in);
+        System.out.println("\n height : ");
+        int h = number.nextInt();
+        System.out.println("\n weight :");
+        int w = number.nextInt();
+        System.out.println("\n length: " );
+        int l = number.nextInt();
+
+
+
+
+        Volume cal = new reg(h, w, 5, l);
+
+        cal.TitleText();
+        System.out.println("circle "+cal.carcle());
+        System.out.println("rectagle "+cal.regtrangl());
+        System.out.println("tregle "+cal.tragle());
+
+
+
 
 
 
