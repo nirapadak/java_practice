@@ -139,6 +139,7 @@ import CalculatQuantity.reg;
 import TaxtCalculator.employee;
 import TaxtCalculator.fullTimeEmployee;
 import TaxtCalculator.partTimeEmployee;
+import todoCreateServer.createTodo;
 
 
 
@@ -289,24 +290,31 @@ public class Main {
 
         // volume -------------------------------------------------------------------
 
-        Scanner number = new Scanner(System.in);
-        System.out.println("\n height : ");
-        int h = number.nextInt();
-        System.out.println("\n weight :");
-        int w = number.nextInt();
-        System.out.println("\n length: " );
-        int l = number.nextInt();
+//        Scanner number = new Scanner(System.in);
+//        System.out.println("\n height : ");
+//        int h = number.nextInt();
+//        System.out.println("\n weight :");
+//        int w = number.nextInt();
+//        System.out.println("\n length: " );
+//        int l = number.nextInt();
+//
+//
+//
+//
+//        Volume cal = new reg(h, w, 5, l);
+//
+//        cal.TitleText();
+//        System.out.println("circle "+cal.carcle());
+//        System.out.println("rectagle "+cal.regtrangl());
+//        System.out.println("tregle "+cal.tragle());
 
 
 
+        // http request form server using node js api in myTodo application -------------------------------------------------------
+//    getRequest.requestOne();
+//    postRequest.Login();
 
-        Volume cal = new reg(h, w, 5, l);
-
-        cal.TitleText();
-        System.out.println("circle "+cal.carcle());
-        System.out.println("rectagle "+cal.regtrangl());
-        System.out.println("tregle "+cal.tragle());
-
+    createTodo.create();
 
 
 
