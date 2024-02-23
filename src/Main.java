@@ -139,6 +139,7 @@ import CalculatQuantity.reg;
 import TaxtCalculator.employee;
 import TaxtCalculator.fullTimeEmployee;
 import TaxtCalculator.partTimeEmployee;
+import myInterfaceDetail.Dog;
 import todoCreateServer.createTodo;
 
 
@@ -314,7 +315,18 @@ public class Main {
 //    getRequest.requestOne();
 //    postRequest.Login();
 
-    createTodo.create();
+//    createTodo.create();
+
+        // create a object with two interface function --------------------------------------
+        Dog myDog = new Dog();
+        System.out.println("\n");
+        // function One return String =======================================================
+        String myName = myDog.myAnimalRun();
+        System.out.println(myName);
+        // function Two only print String ===================================================
+        myDog.myRun();
+
+
 
 
 
